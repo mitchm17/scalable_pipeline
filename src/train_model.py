@@ -16,7 +16,7 @@ from sklearn.metrics            import (
                                         recall_score
                                         )
 from sklearn.ensemble           import RandomForestClassifier
-from sklearn.preprocessing import LabelBinarizer, OneHotEncoder
+from sklearn.preprocessing import LabelBinarizer, LabelEncoder, OneHotEncoder
 
 class TrainModel():
 
@@ -41,6 +41,7 @@ class TrainModel():
         self._model_predictions()
         self._score_model()
         self._save_model()
+        self._slice_data()
     # end def
 
     def _load_data(self):
@@ -114,7 +115,7 @@ class TrainModel():
         self.preds = self.model.predict(self.X_test)
     # end def
 
-    def _score_model(self):
+    def _score_model(self, y=None, preds=None):
         """
         Validates the trained machine learning model using precision, recall, and F1.
 
@@ -130,12 +131,19 @@ class TrainModel():
         recall : float
         fbeta : float
         """
-        self.fbeta       = fbeta_score(self.y_test, self.preds, beta=1,
-                                       zero_division=1)
-        self.precision   = precision_score(self.y_test, self.preds,
-                                           zero_division=1)
-        self.recall      = recall_score(self.y_test, self.preds,
+        if y is None and preds is None:
+            self.fbeta       = fbeta_score(self.y_test, self.preds, beta=1,
                                         zero_division=1)
+            self.precision   = precision_score(self.y_test, self.preds,
+                                            zero_division=1)
+            self.recall      = recall_score(self.y_test, self.preds,
+                                            zero_division=1)
+        else:
+            fbeta            = fbeta_score(y, preds, beta=1, zero_division=1)
+            precision        = precision_score(y, preds, zero_division=1)
+            recall           = recall_score(y, preds, zero_division=1)
+            return (fbeta, precision, recall)
+        # end if
     # end def
 
     def _save_model(self):
@@ -143,6 +151,12 @@ class TrainModel():
                                  "model", "model.pkl")
         with open(model_path, 'wb') as save_model:
             pickle.dump(self.model, save_model)
+        # end with
+
+        self.encoder_path = os.path.join(os.path.dirname(os.path.dirname(__file__)),
+                                    "model", "encoder.pkl")
+        with open(self.encoder_path, "wb") as save_encoder:
+            pickle.dump(self.training_encoder, save_encoder)
         # end with
     # end def
 
@@ -211,6 +225,43 @@ class TrainModel():
 
         X = np.concatenate([X_continuous, X_categorical], axis=1)
         return X, y, encoder, lb
+    # end def
+
+    def _slice_data(self):
+        """ Function for calculating descriptive stats on slices of the dataset.
+        Referencing the knowledge question: https://knowledge.udacity.com/questions/909273
+        """
+        _, test_set  = train_test_split(self.data, test_size=0.20,
+                                        random_state=17,
+                                        stratify=self.data.salary)
+        encoder      = pd.read_pickle(self.encoder_path)
+        ouptut_lines = []
+        for cat_feat in self.cat_features:
+            for cls in test_set[cat_feat].unique():
+                df_temp         = test_set[test_set[cat_feat] == cls]
+                X_test, _, _, _ = self._process_data(df_temp, self.cat_features,
+                                                     encoder=encoder,
+                                                     label='salary', lb=self.lb,
+                                                     training=False)
+                y_preds         = self.model.predict(X_test)
+                y               = df_temp.iloc[:,-1:]
+                lb              = LabelEncoder()
+                y               = lb.fit_transform(np.ravel(y))
+                fbeta, prec, recall = self._score_model(y, y_preds)
+                feature_output  = f"\n{cat_feat.upper()} Stats for {cls} Class: "
+                feature_output += f"{cat_feat} precision: {prec:.4f}, "
+                feature_output += f"{cat_feat} recall: {recall:.4f}, "
+                feature_output += f"{cat_feat} fbeta: {fbeta:.4f}"
+                ouptut_lines.append(feature_output)
+            # end for
+        # end for cat_feat
+
+        output_path = os.path.join(os.path.dirname(os.path.dirname(__file__)),
+                                    "slice_output.txt")
+        with open(output_path, 'w') as output:
+            output.writelines(ouptut_lines)
+        # end with
+    # end def
 # end class
 
 if __name__ == "__main__":
