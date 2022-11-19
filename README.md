@@ -19,6 +19,8 @@ Working in a command line environment is recommended for ease of use with git an
 * From the Services drop down select S3 and then click Create bucket.
 * Give your bucket a name, the rest of the options can remain at their default.
 
+__Bucket Name__: *mm-ml-scalable-pipeline*
+
 To use your new S3 bucket from the AWS CLI you will need to create an IAM user with the appropriate permissions. The full instructions can be found <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html#id_users_create_console" target="_blank">here</a>, what follows is a paraphrasing:
 
 * Sign in to the IAM console <a href="https://console.aws.amazon.com/iam/" target="_blank">here</a> or from the Services drop down on the upper navigation bar.
@@ -26,7 +28,7 @@ To use your new S3 bucket from the AWS CLI you will need to create an IAM user w
 * Give the user a name and select **Programmatic access**.
 * In the permissions selector, search for S3 and give it **AmazonS3FullAccess**
 * Tags are optional and can be skipped.
-* After reviewing your choices, click create user. 
+* After reviewing your choices, click create user.
 * Configure your AWS CLI to use the Access key ID and Secret Access key.
 
 ## GitHub Actions
