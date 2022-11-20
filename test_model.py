@@ -56,7 +56,7 @@ def test_model_scoring(model):
 def test_root_response():
     r = client.get("/")
     assert r.status_code == 200
-    assert r.json() == ['Hello: Reviewer! Hope you like my code!']
+    assert r.json() == ['Hello: Reviewer! I hope you like my code!']
 # end def
 
 def test_app_bad_response():
