@@ -60,13 +60,13 @@ def test_root_response():
 # end def
 
 def test_app_bad_response():
-    r = client.post("/model_inference/")
+    r = client.post("/make_model/")
     assert r.status_code != 200
 # end def
 
 def test_app_correct_response():
     data_path = {"file": "./data/census.csv"}
-    r = client.post("/model_inference/", data=json.dumps(data_path))
+    r = client.post("/make_model/", data=json.dumps(data_path))
     assert r.status_code == 200
     assert 'model' in r.json() and 'precision' in r.json()
 # end def

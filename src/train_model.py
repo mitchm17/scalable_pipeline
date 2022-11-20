@@ -41,6 +41,7 @@ class TrainModel():
         self._model_predictions()
         self._score_model()
         self._save_model()
+        self._save_encoder()
         self._slice_data()
     # end def
 
@@ -152,7 +153,9 @@ class TrainModel():
         with open(model_path, 'wb') as save_model:
             pickle.dump(self.model, save_model)
         # end with
+    # end def
 
+    def _save_encoder(self):
         self.encoder_path = os.path.join(os.path.dirname(os.path.dirname(__file__)),
                                     "model", "encoder.pkl")
         with open(self.encoder_path, "wb") as save_encoder:

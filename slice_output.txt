@@ -1,102 +1,102 @@
 
-WORKCLASS Stats for Class: Private, workclass precision: 0.9572, workclass recall: 0.9253workclass fbeta: 0.9410
-WORKCLASS Stats for Class: Unknown, workclass precision: 0.9000, workclass recall: 0.8780workclass fbeta: 0.8889
-WORKCLASS Stats for Class: State-gov, workclass precision: 0.9744, workclass recall: 0.9048workclass fbeta: 0.9383
-WORKCLASS Stats for Class: Without-pay, workclass precision: 1.0000, workclass recall: 1.0000workclass fbeta: 1.0000
-WORKCLASS Stats for Class: Self-emp-not-inc, workclass precision: 0.9568, workclass recall: 0.9236workclass fbeta: 0.9399
-WORKCLASS Stats for Class: Local-gov, workclass precision: 0.9464, workclass recall: 0.9060workclass fbeta: 0.9258
-WORKCLASS Stats for Class: Federal-gov, workclass precision: 0.9259, workclass recall: 0.9615workclass fbeta: 0.9434
-WORKCLASS Stats for Class: Self-emp-inc, workclass precision: 0.9558, workclass recall: 0.9558workclass fbeta: 0.9558
-WORKCLASS Stats for Class: Never-worked, workclass precision: 1.0000, workclass recall: 1.0000workclass fbeta: 1.0000
-EDUCATION Stats for Class: HS-grad, education precision: 0.9460, education recall: 0.8843education fbeta: 0.9141
-EDUCATION Stats for Class: Bachelors, education precision: 0.9615, education recall: 0.9571education fbeta: 0.9593
-EDUCATION Stats for Class: 7th-8th, education precision: 0.8571, education recall: 0.8571education fbeta: 0.8571
-EDUCATION Stats for Class: Some-college, education precision: 0.9474, education recall: 0.9164education fbeta: 0.9316
-EDUCATION Stats for Class: Doctorate, education precision: 0.9630, education recall: 0.9630education fbeta: 0.9630
-EDUCATION Stats for Class: Assoc-acdm, education precision: 0.9286, education recall: 0.8966education fbeta: 0.9123
-EDUCATION Stats for Class: 9th, education precision: 1.0000, education recall: 0.0000education fbeta: 0.0000
-EDUCATION Stats for Class: Masters, education precision: 0.9492, education recall: 0.9444education fbeta: 0.9468
-EDUCATION Stats for Class: 11th, education precision: 1.0000, education recall: 0.8571education fbeta: 0.9231
-EDUCATION Stats for Class: 5th-6th, education precision: 1.0000, education recall: 0.8000education fbeta: 0.8889
-EDUCATION Stats for Class: 12th, education precision: 1.0000, education recall: 0.8571education fbeta: 0.9231
-EDUCATION Stats for Class: 10th, education precision: 1.0000, education recall: 1.0000education fbeta: 1.0000
-EDUCATION Stats for Class: 1st-4th, education precision: 1.0000, education recall: 1.0000education fbeta: 1.0000
-EDUCATION Stats for Class: Prof-school, education precision: 0.9881, education recall: 0.9881education fbeta: 0.9881
-EDUCATION Stats for Class: Assoc-voc, education precision: 0.9420, education recall: 0.8784education fbeta: 0.9091
-EDUCATION Stats for Class: Preschool, education precision: 1.0000, education recall: 1.0000education fbeta: 1.0000
-MARITAL-STATUS Stats for Class: Never-married, marital-status precision: 0.9630, marital-status recall: 0.8041marital-status fbeta: 0.8764
-MARITAL-STATUS Stats for Class: Widowed, marital-status precision: 1.0000, marital-status recall: 0.8261marital-status fbeta: 0.9048
-MARITAL-STATUS Stats for Class: Married-civ-spouse, marital-status precision: 0.9516, marital-status recall: 0.9374marital-status fbeta: 0.9444
-MARITAL-STATUS Stats for Class: Divorced, marital-status precision: 0.9643, marital-status recall: 0.9000marital-status fbeta: 0.9310
-MARITAL-STATUS Stats for Class: Separated, marital-status precision: 1.0000, marital-status recall: 1.0000marital-status fbeta: 1.0000
-MARITAL-STATUS Stats for Class: Married-spouse-absent, marital-status precision: 1.0000, marital-status recall: 0.7500marital-status fbeta: 0.8571
-MARITAL-STATUS Stats for Class: Married-AF-spouse, marital-status precision: 1.0000, marital-status recall: 1.0000marital-status fbeta: 1.0000
-OCCUPATION Stats for Class: Other-service, occupation precision: 0.9677, occupation recall: 0.9091occupation fbeta: 0.9375
-OCCUPATION Stats for Class: Unknown, occupation precision: 0.9000, occupation recall: 0.8780occupation fbeta: 0.8889
-OCCUPATION Stats for Class: Transport-moving, occupation precision: 0.9298, occupation recall: 0.9298occupation fbeta: 0.9298
-OCCUPATION Stats for Class: Prof-specialty, occupation precision: 0.9694, occupation recall: 0.9484occupation fbeta: 0.9588
-OCCUPATION Stats for Class: Sales, occupation precision: 0.9347, occupation recall: 0.9163occupation fbeta: 0.9254
-OCCUPATION Stats for Class: Exec-managerial, occupation precision: 0.9519, occupation recall: 0.9616occupation fbeta: 0.9567
-OCCUPATION Stats for Class: Craft-repair, occupation precision: 0.9763, occupation recall: 0.9016occupation fbeta: 0.9375
-OCCUPATION Stats for Class: Tech-support, occupation precision: 0.9630, occupation recall: 0.8966occupation fbeta: 0.9286
-OCCUPATION Stats for Class: Machine-op-inspct, occupation precision: 0.9778, occupation recall: 0.9167occupation fbeta: 0.9462
-OCCUPATION Stats for Class: Handlers-cleaners, occupation precision: 0.9444, occupation recall: 0.8500occupation fbeta: 0.8947
-OCCUPATION Stats for Class: Protective-serv, occupation precision: 0.8857, occupation recall: 0.8857occupation fbeta: 0.8857
-OCCUPATION Stats for Class: Farming-fishing, occupation precision: 0.9545, occupation recall: 0.9130occupation fbeta: 0.9333
-OCCUPATION Stats for Class: Adm-clerical, occupation precision: 0.9474, occupation recall: 0.8411occupation fbeta: 0.8911
-OCCUPATION Stats for Class: Priv-house-serv, occupation precision: 1.0000, occupation recall: 1.0000occupation fbeta: 1.0000
-OCCUPATION Stats for Class: Armed-Forces, occupation precision: 1.0000, occupation recall: 1.0000occupation fbeta: 1.0000
-RELATIONSHIP Stats for Class: Own-child, relationship precision: 1.0000, relationship recall: 0.8182relationship fbeta: 0.9000
-RELATIONSHIP Stats for Class: Other-relative, relationship precision: 1.0000, relationship recall: 0.7500relationship fbeta: 0.8571
-RELATIONSHIP Stats for Class: Husband, relationship precision: 0.9518, relationship recall: 0.9422relationship fbeta: 0.9470
-RELATIONSHIP Stats for Class: Not-in-family, relationship precision: 0.9643, relationship recall: 0.8385relationship fbeta: 0.8970
-RELATIONSHIP Stats for Class: Unmarried, relationship precision: 0.9792, relationship recall: 0.9216relationship fbeta: 0.9495
-RELATIONSHIP Stats for Class: Wife, relationship precision: 0.9485, relationship recall: 0.9021relationship fbeta: 0.9247
-RACE Stats for Class: White, race precision: 0.9559, race recall: 0.9226race fbeta: 0.9390
-RACE Stats for Class: Black, race precision: 0.9398, race recall: 0.9750race fbeta: 0.9571
-RACE Stats for Class: Amer-Indian-Eskimo, race precision: 1.0000, race recall: 0.8571race fbeta: 0.9231
-RACE Stats for Class: Other, race precision: 1.0000, race recall: 0.8333race fbeta: 0.9091
-RACE Stats for Class: Asian-Pac-Islander, race precision: 0.9070, race recall: 0.9512race fbeta: 0.9286
-SEX Stats for Class: Female, sex precision: 0.9569, sex recall: 0.8772sex fbeta: 0.9153
-SEX Stats for Class: Male, sex precision: 0.9535, sex recall: 0.9336sex fbeta: 0.9434
-NATIVE-COUNTRY Stats for Class: United-States, native-country precision: 0.9576, native-country recall: 0.9268native-country fbeta: 0.9419
-NATIVE-COUNTRY Stats for Class: Mexico, native-country precision: 1.0000, native-country recall: 1.0000native-country fbeta: 1.0000
-NATIVE-COUNTRY Stats for Class: Unknown, native-country precision: 0.9474, native-country recall: 0.9474native-country fbeta: 0.9474
-NATIVE-COUNTRY Stats for Class: Germany, native-country precision: 0.9231, native-country recall: 1.0000native-country fbeta: 0.9600
-NATIVE-COUNTRY Stats for Class: Puerto-Rico, native-country precision: 0.3333, native-country recall: 1.0000native-country fbeta: 0.5000
-NATIVE-COUNTRY Stats for Class: Haiti, native-country precision: 1.0000, native-country recall: 1.0000native-country fbeta: 1.0000
-NATIVE-COUNTRY Stats for Class: Iran, native-country precision: 0.8000, native-country recall: 1.0000native-country fbeta: 0.8889
-NATIVE-COUNTRY Stats for Class: Jamaica, native-country precision: 1.0000, native-country recall: 1.0000native-country fbeta: 1.0000
-NATIVE-COUNTRY Stats for Class: England, native-country precision: 1.0000, native-country recall: 0.8000native-country fbeta: 0.8889
-NATIVE-COUNTRY Stats for Class: Philippines, native-country precision: 1.0000, native-country recall: 1.0000native-country fbeta: 1.0000
-NATIVE-COUNTRY Stats for Class: South, native-country precision: 0.8000, native-country recall: 0.8000native-country fbeta: 0.8000
-NATIVE-COUNTRY Stats for Class: China, native-country precision: 0.6667, native-country recall: 1.0000native-country fbeta: 0.8000
-NATIVE-COUNTRY Stats for Class: Nicaragua, native-country precision: 1.0000, native-country recall: 1.0000native-country fbeta: 1.0000
-NATIVE-COUNTRY Stats for Class: Guatemala, native-country precision: 1.0000, native-country recall: 0.5000native-country fbeta: 0.6667
-NATIVE-COUNTRY Stats for Class: Cambodia, native-country precision: 1.0000, native-country recall: 1.0000native-country fbeta: 1.0000
-NATIVE-COUNTRY Stats for Class: Canada, native-country precision: 1.0000, native-country recall: 0.8000native-country fbeta: 0.8889
-NATIVE-COUNTRY Stats for Class: Dominican-Republic, native-country precision: 1.0000, native-country recall: 1.0000native-country fbeta: 1.0000
-NATIVE-COUNTRY Stats for Class: Italy, native-country precision: 0.8000, native-country recall: 0.6667native-country fbeta: 0.7273
-NATIVE-COUNTRY Stats for Class: France, native-country precision: 1.0000, native-country recall: 1.0000native-country fbeta: 1.0000
-NATIVE-COUNTRY Stats for Class: India, native-country precision: 1.0000, native-country recall: 0.8000native-country fbeta: 0.8889
-NATIVE-COUNTRY Stats for Class: Outlying-US(Guam-USVI-etc), native-country precision: 1.0000, native-country recall: 1.0000native-country fbeta: 1.0000
-NATIVE-COUNTRY Stats for Class: Cuba, native-country precision: 1.0000, native-country recall: 1.0000native-country fbeta: 1.0000
-NATIVE-COUNTRY Stats for Class: Vietnam, native-country precision: 0.5000, native-country recall: 1.0000native-country fbeta: 0.6667
-NATIVE-COUNTRY Stats for Class: Hungary, native-country precision: 1.0000, native-country recall: 1.0000native-country fbeta: 1.0000
-NATIVE-COUNTRY Stats for Class: Columbia, native-country precision: 1.0000, native-country recall: 1.0000native-country fbeta: 1.0000
-NATIVE-COUNTRY Stats for Class: Taiwan, native-country precision: 1.0000, native-country recall: 1.0000native-country fbeta: 1.0000
-NATIVE-COUNTRY Stats for Class: El-Salvador, native-country precision: 1.0000, native-country recall: 1.0000native-country fbeta: 1.0000
-NATIVE-COUNTRY Stats for Class: Trinadad&Tobago, native-country precision: 1.0000, native-country recall: 0.0000native-country fbeta: 0.0000
-NATIVE-COUNTRY Stats for Class: Peru, native-country precision: 1.0000, native-country recall: 1.0000native-country fbeta: 1.0000
-NATIVE-COUNTRY Stats for Class: Greece, native-country precision: 0.0000, native-country recall: 0.0000native-country fbeta: 0.0000
-NATIVE-COUNTRY Stats for Class: Ecuador, native-country precision: 1.0000, native-country recall: 1.0000native-country fbeta: 1.0000
-NATIVE-COUNTRY Stats for Class: Laos, native-country precision: 1.0000, native-country recall: 1.0000native-country fbeta: 1.0000
-NATIVE-COUNTRY Stats for Class: Ireland, native-country precision: 1.0000, native-country recall: 1.0000native-country fbeta: 1.0000
-NATIVE-COUNTRY Stats for Class: Japan, native-country precision: 1.0000, native-country recall: 1.0000native-country fbeta: 1.0000
-NATIVE-COUNTRY Stats for Class: Poland, native-country precision: 1.0000, native-country recall: 1.0000native-country fbeta: 1.0000
-NATIVE-COUNTRY Stats for Class: Thailand, native-country precision: 1.0000, native-country recall: 1.0000native-country fbeta: 1.0000
-NATIVE-COUNTRY Stats for Class: Hong, native-country precision: 1.0000, native-country recall: 1.0000native-country fbeta: 1.0000
-NATIVE-COUNTRY Stats for Class: Yugoslavia, native-country precision: 1.0000, native-country recall: 1.0000native-country fbeta: 1.0000
-NATIVE-COUNTRY Stats for Class: Portugal, native-country precision: 1.0000, native-country recall: 1.0000native-country fbeta: 1.0000
-NATIVE-COUNTRY Stats for Class: Scotland, native-country precision: 0.0000, native-country recall: 1.0000native-country fbeta: 0.0000
-NATIVE-COUNTRY Stats for Class: Honduras, native-country precision: 1.0000, native-country recall: 1.0000native-country fbeta: 1.0000
+WORKCLASS Stats for Private Class: workclass precision: 0.9572, workclass recall: 0.9253, workclass fbeta: 0.9410
+WORKCLASS Stats for Unknown Class: workclass precision: 0.9000, workclass recall: 0.8780, workclass fbeta: 0.8889
+WORKCLASS Stats for State-gov Class: workclass precision: 0.9744, workclass recall: 0.9048, workclass fbeta: 0.9383
+WORKCLASS Stats for Without-pay Class: workclass precision: 1.0000, workclass recall: 1.0000, workclass fbeta: 1.0000
+WORKCLASS Stats for Self-emp-not-inc Class: workclass precision: 0.9568, workclass recall: 0.9236, workclass fbeta: 0.9399
+WORKCLASS Stats for Local-gov Class: workclass precision: 0.9464, workclass recall: 0.9060, workclass fbeta: 0.9258
+WORKCLASS Stats for Federal-gov Class: workclass precision: 0.9259, workclass recall: 0.9615, workclass fbeta: 0.9434
+WORKCLASS Stats for Self-emp-inc Class: workclass precision: 0.9558, workclass recall: 0.9558, workclass fbeta: 0.9558
+WORKCLASS Stats for Never-worked Class: workclass precision: 1.0000, workclass recall: 1.0000, workclass fbeta: 1.0000
+EDUCATION Stats for HS-grad Class: education precision: 0.9460, education recall: 0.8843, education fbeta: 0.9141
+EDUCATION Stats for Bachelors Class: education precision: 0.9615, education recall: 0.9571, education fbeta: 0.9593
+EDUCATION Stats for 7th-8th Class: education precision: 0.8571, education recall: 0.8571, education fbeta: 0.8571
+EDUCATION Stats for Some-college Class: education precision: 0.9474, education recall: 0.9164, education fbeta: 0.9316
+EDUCATION Stats for Doctorate Class: education precision: 0.9630, education recall: 0.9630, education fbeta: 0.9630
+EDUCATION Stats for Assoc-acdm Class: education precision: 0.9286, education recall: 0.8966, education fbeta: 0.9123
+EDUCATION Stats for 9th Class: education precision: 1.0000, education recall: 0.0000, education fbeta: 0.0000
+EDUCATION Stats for Masters Class: education precision: 0.9492, education recall: 0.9444, education fbeta: 0.9468
+EDUCATION Stats for 11th Class: education precision: 1.0000, education recall: 0.8571, education fbeta: 0.9231
+EDUCATION Stats for 5th-6th Class: education precision: 1.0000, education recall: 0.8000, education fbeta: 0.8889
+EDUCATION Stats for 12th Class: education precision: 1.0000, education recall: 0.8571, education fbeta: 0.9231
+EDUCATION Stats for 10th Class: education precision: 1.0000, education recall: 1.0000, education fbeta: 1.0000
+EDUCATION Stats for 1st-4th Class: education precision: 1.0000, education recall: 1.0000, education fbeta: 1.0000
+EDUCATION Stats for Prof-school Class: education precision: 0.9881, education recall: 0.9881, education fbeta: 0.9881
+EDUCATION Stats for Assoc-voc Class: education precision: 0.9420, education recall: 0.8784, education fbeta: 0.9091
+EDUCATION Stats for Preschool Class: education precision: 1.0000, education recall: 1.0000, education fbeta: 1.0000
+MARITAL-STATUS Stats for Never-married Class: marital-status precision: 0.9630, marital-status recall: 0.8041, marital-status fbeta: 0.8764
+MARITAL-STATUS Stats for Widowed Class: marital-status precision: 1.0000, marital-status recall: 0.8261, marital-status fbeta: 0.9048
+MARITAL-STATUS Stats for Married-civ-spouse Class: marital-status precision: 0.9516, marital-status recall: 0.9374, marital-status fbeta: 0.9444
+MARITAL-STATUS Stats for Divorced Class: marital-status precision: 0.9643, marital-status recall: 0.9000, marital-status fbeta: 0.9310
+MARITAL-STATUS Stats for Separated Class: marital-status precision: 1.0000, marital-status recall: 1.0000, marital-status fbeta: 1.0000
+MARITAL-STATUS Stats for Married-spouse-absent Class: marital-status precision: 1.0000, marital-status recall: 0.7500, marital-status fbeta: 0.8571
+MARITAL-STATUS Stats for Married-AF-spouse Class: marital-status precision: 1.0000, marital-status recall: 1.0000, marital-status fbeta: 1.0000
+OCCUPATION Stats for Other-service Class: occupation precision: 0.9677, occupation recall: 0.9091, occupation fbeta: 0.9375
+OCCUPATION Stats for Unknown Class: occupation precision: 0.9000, occupation recall: 0.8780, occupation fbeta: 0.8889
+OCCUPATION Stats for Transport-moving Class: occupation precision: 0.9298, occupation recall: 0.9298, occupation fbeta: 0.9298
+OCCUPATION Stats for Prof-specialty Class: occupation precision: 0.9694, occupation recall: 0.9484, occupation fbeta: 0.9588
+OCCUPATION Stats for Sales Class: occupation precision: 0.9347, occupation recall: 0.9163, occupation fbeta: 0.9254
+OCCUPATION Stats for Exec-managerial Class: occupation precision: 0.9519, occupation recall: 0.9616, occupation fbeta: 0.9567
+OCCUPATION Stats for Craft-repair Class: occupation precision: 0.9763, occupation recall: 0.9016, occupation fbeta: 0.9375
+OCCUPATION Stats for Tech-support Class: occupation precision: 0.9630, occupation recall: 0.8966, occupation fbeta: 0.9286
+OCCUPATION Stats for Machine-op-inspct Class: occupation precision: 0.9778, occupation recall: 0.9167, occupation fbeta: 0.9462
+OCCUPATION Stats for Handlers-cleaners Class: occupation precision: 0.9444, occupation recall: 0.8500, occupation fbeta: 0.8947
+OCCUPATION Stats for Protective-serv Class: occupation precision: 0.8857, occupation recall: 0.8857, occupation fbeta: 0.8857
+OCCUPATION Stats for Farming-fishing Class: occupation precision: 0.9545, occupation recall: 0.9130, occupation fbeta: 0.9333
+OCCUPATION Stats for Adm-clerical Class: occupation precision: 0.9474, occupation recall: 0.8411, occupation fbeta: 0.8911
+OCCUPATION Stats for Priv-house-serv Class: occupation precision: 1.0000, occupation recall: 1.0000, occupation fbeta: 1.0000
+OCCUPATION Stats for Armed-Forces Class: occupation precision: 1.0000, occupation recall: 1.0000, occupation fbeta: 1.0000
+RELATIONSHIP Stats for Own-child Class: relationship precision: 1.0000, relationship recall: 0.8182, relationship fbeta: 0.9000
+RELATIONSHIP Stats for Other-relative Class: relationship precision: 1.0000, relationship recall: 0.7500, relationship fbeta: 0.8571
+RELATIONSHIP Stats for Husband Class: relationship precision: 0.9518, relationship recall: 0.9422, relationship fbeta: 0.9470
+RELATIONSHIP Stats for Not-in-family Class: relationship precision: 0.9643, relationship recall: 0.8385, relationship fbeta: 0.8970
+RELATIONSHIP Stats for Unmarried Class: relationship precision: 0.9792, relationship recall: 0.9216, relationship fbeta: 0.9495
+RELATIONSHIP Stats for Wife Class: relationship precision: 0.9485, relationship recall: 0.9021, relationship fbeta: 0.9247
+RACE Stats for White Class: race precision: 0.9559, race recall: 0.9226, race fbeta: 0.9390
+RACE Stats for Black Class: race precision: 0.9398, race recall: 0.9750, race fbeta: 0.9571
+RACE Stats for Amer-Indian-Eskimo Class: race precision: 1.0000, race recall: 0.8571, race fbeta: 0.9231
+RACE Stats for Other Class: race precision: 1.0000, race recall: 0.8333, race fbeta: 0.9091
+RACE Stats for Asian-Pac-Islander Class: race precision: 0.9070, race recall: 0.9512, race fbeta: 0.9286
+SEX Stats for Female Class: sex precision: 0.9569, sex recall: 0.8772, sex fbeta: 0.9153
+SEX Stats for Male Class: sex precision: 0.9535, sex recall: 0.9336, sex fbeta: 0.9434
+NATIVE-COUNTRY Stats for United-States Class: native-country precision: 0.9576, native-country recall: 0.9268, native-country fbeta: 0.9419
+NATIVE-COUNTRY Stats for Mexico Class: native-country precision: 1.0000, native-country recall: 1.0000, native-country fbeta: 1.0000
+NATIVE-COUNTRY Stats for Unknown Class: native-country precision: 0.9474, native-country recall: 0.9474, native-country fbeta: 0.9474
+NATIVE-COUNTRY Stats for Germany Class: native-country precision: 0.9231, native-country recall: 1.0000, native-country fbeta: 0.9600
+NATIVE-COUNTRY Stats for Puerto-Rico Class: native-country precision: 0.3333, native-country recall: 1.0000, native-country fbeta: 0.5000
+NATIVE-COUNTRY Stats for Haiti Class: native-country precision: 1.0000, native-country recall: 1.0000, native-country fbeta: 1.0000
+NATIVE-COUNTRY Stats for Iran Class: native-country precision: 0.8000, native-country recall: 1.0000, native-country fbeta: 0.8889
+NATIVE-COUNTRY Stats for Jamaica Class: native-country precision: 1.0000, native-country recall: 1.0000, native-country fbeta: 1.0000
+NATIVE-COUNTRY Stats for England Class: native-country precision: 1.0000, native-country recall: 0.8000, native-country fbeta: 0.8889
+NATIVE-COUNTRY Stats for Philippines Class: native-country precision: 1.0000, native-country recall: 1.0000, native-country fbeta: 1.0000
+NATIVE-COUNTRY Stats for South Class: native-country precision: 0.8000, native-country recall: 0.8000, native-country fbeta: 0.8000
+NATIVE-COUNTRY Stats for China Class: native-country precision: 0.6667, native-country recall: 1.0000, native-country fbeta: 0.8000
+NATIVE-COUNTRY Stats for Nicaragua Class: native-country precision: 1.0000, native-country recall: 1.0000, native-country fbeta: 1.0000
+NATIVE-COUNTRY Stats for Guatemala Class: native-country precision: 1.0000, native-country recall: 0.5000, native-country fbeta: 0.6667
+NATIVE-COUNTRY Stats for Cambodia Class: native-country precision: 1.0000, native-country recall: 1.0000, native-country fbeta: 1.0000
+NATIVE-COUNTRY Stats for Canada Class: native-country precision: 1.0000, native-country recall: 0.8000, native-country fbeta: 0.8889
+NATIVE-COUNTRY Stats for Dominican-Republic Class: native-country precision: 1.0000, native-country recall: 1.0000, native-country fbeta: 1.0000
+NATIVE-COUNTRY Stats for Italy Class: native-country precision: 0.8000, native-country recall: 0.6667, native-country fbeta: 0.7273
+NATIVE-COUNTRY Stats for France Class: native-country precision: 1.0000, native-country recall: 1.0000, native-country fbeta: 1.0000
+NATIVE-COUNTRY Stats for India Class: native-country precision: 1.0000, native-country recall: 0.8000, native-country fbeta: 0.8889
+NATIVE-COUNTRY Stats for Outlying-US(Guam-USVI-etc) Class: native-country precision: 1.0000, native-country recall: 1.0000, native-country fbeta: 1.0000
+NATIVE-COUNTRY Stats for Cuba Class: native-country precision: 1.0000, native-country recall: 1.0000, native-country fbeta: 1.0000
+NATIVE-COUNTRY Stats for Vietnam Class: native-country precision: 0.5000, native-country recall: 1.0000, native-country fbeta: 0.6667
+NATIVE-COUNTRY Stats for Hungary Class: native-country precision: 1.0000, native-country recall: 1.0000, native-country fbeta: 1.0000
+NATIVE-COUNTRY Stats for Columbia Class: native-country precision: 1.0000, native-country recall: 1.0000, native-country fbeta: 1.0000
+NATIVE-COUNTRY Stats for Taiwan Class: native-country precision: 1.0000, native-country recall: 1.0000, native-country fbeta: 1.0000
+NATIVE-COUNTRY Stats for El-Salvador Class: native-country precision: 1.0000, native-country recall: 1.0000, native-country fbeta: 1.0000
+NATIVE-COUNTRY Stats for Trinadad&Tobago Class: native-country precision: 1.0000, native-country recall: 0.0000, native-country fbeta: 0.0000
+NATIVE-COUNTRY Stats for Peru Class: native-country precision: 1.0000, native-country recall: 1.0000, native-country fbeta: 1.0000
+NATIVE-COUNTRY Stats for Greece Class: native-country precision: 0.0000, native-country recall: 0.0000, native-country fbeta: 0.0000
+NATIVE-COUNTRY Stats for Ecuador Class: native-country precision: 1.0000, native-country recall: 1.0000, native-country fbeta: 1.0000
+NATIVE-COUNTRY Stats for Laos Class: native-country precision: 1.0000, native-country recall: 1.0000, native-country fbeta: 1.0000
+NATIVE-COUNTRY Stats for Ireland Class: native-country precision: 1.0000, native-country recall: 1.0000, native-country fbeta: 1.0000
+NATIVE-COUNTRY Stats for Japan Class: native-country precision: 1.0000, native-country recall: 1.0000, native-country fbeta: 1.0000
+NATIVE-COUNTRY Stats for Poland Class: native-country precision: 1.0000, native-country recall: 1.0000, native-country fbeta: 1.0000
+NATIVE-COUNTRY Stats for Thailand Class: native-country precision: 1.0000, native-country recall: 1.0000, native-country fbeta: 1.0000
+NATIVE-COUNTRY Stats for Hong Class: native-country precision: 1.0000, native-country recall: 1.0000, native-country fbeta: 1.0000
+NATIVE-COUNTRY Stats for Yugoslavia Class: native-country precision: 1.0000, native-country recall: 1.0000, native-country fbeta: 1.0000
+NATIVE-COUNTRY Stats for Portugal Class: native-country precision: 1.0000, native-country recall: 1.0000, native-country fbeta: 1.0000
+NATIVE-COUNTRY Stats for Scotland Class: native-country precision: 0.0000, native-country recall: 1.0000, native-country fbeta: 0.0000
+NATIVE-COUNTRY Stats for Honduras Class: native-country precision: 1.0000, native-country recall: 1.0000, native-country fbeta: 1.0000
