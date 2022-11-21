@@ -25,3 +25,7 @@ _Please include the metrics used and your model's performance on those metrics._
 ## Ethical Considerations
 - Risk Mitigations: there are no names or person's addresses located in the data, thus, none of the data can be tied to a specific person.
 - Data: the dataset could be used to predict a person's salary based on their race or gender which could lead to possible nefarious misinformation uses.
+
+## Caveats and Recommendations
+- The dataset goes back many years and with the recent drastic changes of salary from 2019 to today, this data could be making predictions based on old data.
+- The model can only make a prediction that, given a set of parameters, a salary will be 50k or less, or more than 50k. A different dataset may be able to provide a more detailed prediction if there are more salary options.

@@ -42,6 +42,7 @@ class TrainModel():
         self._score_model()
         self._save_model()
         self._save_encoder()
+        self._save_binarizer()
         self._slice_data()
     # end def
 
@@ -160,6 +161,14 @@ class TrainModel():
                                     "model", "encoder.pkl")
         with open(self.encoder_path, "wb") as save_encoder:
             pickle.dump(self.training_encoder, save_encoder)
+        # end with
+    # end def
+
+    def _save_binarizer(self):
+        self.binarizer_path = os.path.join(os.path.dirname(os.path.dirname(__file__)),
+                                          "model", "binarizer.pkl")
+        with open(self.binarizer_path, "wb") as save_binarizer:
+            pickle.dump(self.lb, save_binarizer)
         # end with
     # end def
 

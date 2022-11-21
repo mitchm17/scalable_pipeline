@@ -70,3 +70,59 @@ def test_app_correct_response():
     assert r.status_code == 200
     assert 'model' in r.json() and 'precision' in r.json()
 # end def
+
+def test_app_low_salary_inference():
+    data = {
+        "age": [39],
+        "workclass": ["State-gov"],
+        "fnlgt": [77516],
+        "education": ["Bachelors"],
+        "education-num": [13],
+        "marital-status": ["Never-married"],
+        "occupation": ["Adm-clerical"],
+        "relationship": ["Not-in-family"],
+        "race": ["White"],
+        "sex": ["Male"],
+        "capital-gain": [2174],
+        "capital-loss": [0],
+        "hours-per-week": [40],
+        "native-country": ["United-States"],
+        }
+    response = client.post("/model_inference/", data=json.dumps(data))
+    assert response.status_code == 200
+    assert response.json()['model_inference'] == '<=50k'
+# end def
+
+def test_app_high_salary_inference():
+    data = {
+        "age": [56],
+        "workclass": ["Self-emp-not-inc"],
+        "fnlgt": [335605],
+        "education": ["HS-grad"],
+        "education-num": [9],
+        "marital-status": ["Married-civ-spouse"],
+        "occupation": ["Other-service"],
+        "relationship": ["Husband"],
+        "race": ["White"],
+        "sex": ["Male"],
+        "capital-gain": [0],
+        "capital-loss": [1887],
+        "hours-per-week": [50],
+        "native-country": ["Canada"],
+        }
+    response = client.post("/model_inference/", data=json.dumps(data))
+    assert response.status_code == 200
+    assert response.json()['model_inference'] == '>50k'
+# end def
+
+def test_app_bad_inference_request():
+    data = {
+        "age": [39],
+        "workclass": ["State-gov"],
+        "fnlgt": [77516],
+        "education": ["Bachelors"],
+        "education-num": [13],
+    }
+    response = client.post("/model_inference", data=json.dumps(data))
+    assert response.status_code != 200
+# end def

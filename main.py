@@ -4,6 +4,7 @@ Created on 2022-11-17 22:43:33
 
 """
 
+import pickle
 from fastapi import FastAPI
 
 try:
@@ -27,6 +28,14 @@ except ModuleNotFoundError:
 
 app = FastAPI()
 
+@app.on_event("startup")
+async def startup_event():
+    global model, encoder, binarizer
+    model       = pickle.load(open("./model/model.pkl", "rb"))
+    encoder     = pickle.load(open("./model/encoder.pkl", "rb"))
+    binarizer   = pickle.load(open("./model/binarizer.pkl", "rb"))
+# end def
+
 @app.get("/")
 async def root():
     return {"Hello: Reviewer! I hope you like my code!"}
@@ -44,5 +53,6 @@ async def make_model(FileStorage: FileStorage):
 @app.post("/model_inference/")
 async def make_prediction(MakePrediction: MakePrediction):
     preds = model_inference(MakePrediction)
-    return {"model_inference": str(preds)}
+    prediction = '>50k' if str(preds)=='1' else '<=50k'
+    return {"model_inference": prediction}
 # end def
